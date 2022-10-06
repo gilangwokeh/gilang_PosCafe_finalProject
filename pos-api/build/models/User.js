@@ -12,6 +12,8 @@ const UserSchema = new Schema({
     },
     password: {
         type: String,
+        required: true,
+        min: 3
     },
 }, { timestamps: true });
 module.exports = model("users", UserSchema);

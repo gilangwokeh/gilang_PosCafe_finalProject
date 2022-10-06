@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.upload = exports.deleteUser = exports.getIdProduct = exports.getProduct = exports.ProductUpdate = exports.deleteItem = exports.addProduct = exports.getUser = exports.userLogin = exports.userRegister = void 0;
+exports.coreApi = exports.orderMidtrans = exports.upload = exports.deleteUser = exports.getIdProduct = exports.getProduct = exports.ProductUpdate = exports.deleteItem = exports.addProduct = exports.getUser = exports.userLogin = exports.userRegister = void 0;
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const User_1 = __importDefault(require("../models/User"));
@@ -20,6 +20,8 @@ const config_1 = __importDefault(require("../config"));
 const product_1 = __importDefault(require("../models/product"));
 const multer = require('multer');
 const path_1 = __importDefault(require("path"));
+const order_1 = __importDefault(require("../models/order"));
+const midtransClient = require('midtrans-client');
 const userRegister = (userDets, role, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         let usernameNotTaken = yield (ValidateUsername(userDets.username));
@@ -29,7 +31,19 @@ const userRegister = (userDets, role, res) => __awaiter(void 0, void 0, void 0, 
                 success: false
             }).end();
         }
-        const password = yield bcrypt.hash(userDets.password, 12);
+        if (userDets.username.length >= 20) {
+            return res.status(500).json({
+                message: "username anda lebih dari 20 kata",
+                success: false
+            }).end();
+        }
+        if (userDets.password <= 0) {
+            return res.status(400).json({
+                message: "password kosong",
+                success: false
+            }).end();
+        }
+        const password = yield bcrypt.hash(userDets.password, 10);
         const newUser = new User_1.default(Object.assign(Object.assign({}, userDets), { password,
             role }));
         yield newUser.save();
@@ -223,3 +237,36 @@ const fileFilter = (res, file, cb) => {
 };
 const upload = multer({ storage: fileStorage, fileFilter: fileFilter });
 exports.upload = upload;
+const coreApi = new midtransClient.CoreApi({
+    isProduction: false,
+    serverKey: 'SB-Mid-server-ce-L_V2SRMVFIWPhK5pxPA4H',
+    clientKey: 'SB-Mid-client-owq088SSL6Uk-O67'
+});
+exports.coreApi = coreApi;
+const orderMidtrans = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    yield order_1.default.findAll()
+        .then((data) => {
+        let tampilData = data.map((item) => {
+            return {
+                id: item.id,
+                tiket_id: item.tiket_id,
+                nama: item.nama,
+                response_midtrans: JSON.parse(item.response_midtrans),
+                createAt: item.createAt,
+                updateAt: item.updateAt
+            };
+        });
+        res.status(200).json({
+            mesagge: "berhasil tampil",
+            success: true,
+            data: tampilData
+        });
+    })
+        .catch((err) => {
+        res.status(500).json({
+            mesagge: "berhasil tampil" + err.message,
+            success: true,
+        });
+    });
+});
+exports.orderMidtrans = orderMidtrans;
