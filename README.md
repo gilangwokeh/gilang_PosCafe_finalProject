@@ -12,6 +12,10 @@
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(2).jpeg?raw=true)
 
 <pre>
+3.tampilan admin menu bayar
+</pre>
+![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(6).jpeg?raw=true)
+<pre>
 4.tampilan isi super admin ada menu 
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(3).jpeg?raw=true)
