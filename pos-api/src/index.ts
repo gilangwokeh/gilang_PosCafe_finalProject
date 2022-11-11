@@ -11,7 +11,6 @@ app.use(cors());
 app.use(body.json());
 app.use(cookieParser());
 
-//user middleware
 app.use("/api/users", require('./routes/users'))
 const startApp = async () => {
   try {

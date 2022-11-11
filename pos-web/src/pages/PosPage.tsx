@@ -109,7 +109,7 @@ const PosPage = () => {
             <div style={{ display: "none" }}>
               <ComponentToPrint cart={cart} totalAmount={totalAmount} ref={componentRef} />
             </div>
-            <div className='table-responsive bg-dark' id='table-menu'>
+            <div className='table-responsive bg-info' id='table-menu'>
               <table className='table table-responsive table-dark table-hover'>
                 <thead>
                   <tr>
@@ -134,7 +134,7 @@ const PosPage = () => {
                       : 'No item in cart'}
                 </tbody>
               </table>
-              <h2 className='px-2 text-white' id='text-TotalAmount'>total pembayaran: Rp {Number(totalAmount)}</h2>
+              <h2 className='px-2 text-dark' id='text-TotalAmount'>total pembayaran: Rp {Number(totalAmount)}</h2>
             </div>
             <div className='mt-3'>
               {
