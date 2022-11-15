@@ -30,4 +30,3 @@
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(5).jpeg?raw=true)
 
-# untuk bisa login super admin di buat user terlebih dahulu oleh backend
