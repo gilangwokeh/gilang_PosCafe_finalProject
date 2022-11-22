@@ -6,7 +6,6 @@ import axios from 'axios'
 import MainLayout2 from '../layouts/MainLayout2'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai'
 const Homepage = () => {
-
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState("");
   const [navigate, setNavigate] = useState(false);

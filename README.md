@@ -30,3 +30,15 @@
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(5).jpeg?raw=true)
 
+
+# portofolio lain :
+<pre>
+klik link di samping : -> <a href="https://crudreadjs.netlify.app/">Link</a>
+klik link di samping : -> <a href="https://indihome-tangerang.netlify.app/">Link</a>
+</pre>
+
+# untuk melihat isi profile github :
+
+<pre>
+klik link di samping : -> <a href="https://github.com/gilangwokeh">Link</a>
+</pre>
