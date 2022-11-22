@@ -6,7 +6,7 @@
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(1).jpeg?raw=true)
 
 <pre>
-2.tampilan isi admin ada menu 
+2.tampilan isi admin ada menu pilihan kopi
 </pre>
 
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(2).jpeg?raw=true)
@@ -16,7 +16,7 @@
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(6).jpeg?raw=true)
 <pre>
-4.tampilan isi super admin ada menu 
+4.tampilan depan login super admin, ada authentication password menjadi JWT
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(3).jpeg?raw=true)
 
@@ -26,7 +26,7 @@
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(4).jpeg?raw=true)
 
 <pre>
-6.tampilan user ke daftar
+6.tampilan user yang terdaftar di halaman super admin
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(5).jpeg?raw=true)
 
