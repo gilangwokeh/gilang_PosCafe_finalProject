@@ -26,7 +26,7 @@
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(4).jpeg?raw=true)
 
 <pre>
-6.tampilan user yang terdaftar di halaman super admin
+6.tampilan user yang terdaftar berada di halaman super admin.
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(5).jpeg?raw=true)
 
