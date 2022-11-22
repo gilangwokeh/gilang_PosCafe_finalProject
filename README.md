@@ -33,12 +33,12 @@
 
 # portofolio lain :
 <pre>
-klik link di samping : -> <a href="https://crudreadjs.netlify.app/">Link</a>
-klik link di samping : -> <a href="https://indihome-tangerang.netlify.app/">Link</a>
+klik link di samping : -> <a href="https://crudreadjs.netlify.app/" target="_blank">Link</a>
+klik link di samping : -> <a href="https://indihome-tangerang.netlify.app/" target="_blank">Link</a>
 </pre>
 
 # untuk melihat isi profile github :
 
 <pre>
-klik link di samping : -> <a href="https://github.com/gilangwokeh">Link</a>
+klik link di samping : -> <a href="https://github.com/gilangwokeh" target="_blank">Link</a>
 </pre>
