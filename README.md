@@ -1,7 +1,7 @@
 # Demo Image Pos cafe
 
 <pre>
-1.tampilan depan login admin
+1.tampilan depan login admin, ada authentication password menjadi JWT
 </pre>
 ![alt text](https://github.com/gilangwokeh/gilang_PosCafe_finalProject/blob/master/pos-web/public/for-cofe(1).jpeg?raw=true)
 
